@@ -15,7 +15,31 @@
 </head>
 
 <body>
-
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <!-- <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top"> -->
+        <!-- navbar - bootstrap call that defines this html element as the navigation bar.
+            navbar-dark - specifies navbar as a dark bar, other option is navbar-light.
+            navbar-expand-sm - navbar collapses for screen sizes sm and smaller than sm.
+            bg-primary - a primary color which is a shade of blue that is defined in the bootstrap. 
+            fixed-top - the navigation bar stays at top of the page even when you scroll the page. -->
+            <div class="container"> 
+                <!-- used container class here to add navigation bar tabs. The container class is also used in the header and body elements, so that all the elements of the web page have the same width. If we do not use the container class, the navigation bar spreads over the entire width of the screen.-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+                <!-- The 'a' element uses class navbar-brand that is used to display the company brand or logo for your company-->
+                <div class="collapse navbar-collapse" id="Navbar"> 
+                    <ul class="navbar-nav mr-auto">
+                    <!-- navbar-nav - specifies that the unordered list has navigation bar tabs.
+                    mr-auto - class says that leave the margin on the right as much as possible, or push the nav elements to the left of the bar.-->
+                        <!-- nav-item - indicates the list items should be displayed horozontally within the navbar -->
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li> <li class="nav-item"><a class="nav-link" href="#">Menu</a></li> <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-content">
@@ -70,7 +94,7 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>

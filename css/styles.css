@@ -28,3 +28,13 @@ address{
     margin:0px;
     color:#0f0f0f;
 }
+
+body {
+	padding: 50px 0px 0px 0px;
+	z-index: 0; /*defines stacking order of the html element. higher index gets stacked on the top of lower index element. */
+}
+
+/* default navbar-dark class is overloaded to change the background color to a shade of purple */
+.navbar-dark {
+	background-color: #512DA8;
+}
